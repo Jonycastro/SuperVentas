@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26-jun-2019 18:02:00 by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="Modelo.Pedidos" table="pedidos" catalog="SuperVentas" optimistic-lock="version">
+        <id name="idpedidos" type="java.lang.Integer">
+            <column name="IDPedidos" />
+            <generator class="identity" />
+        </id>
+        <property name="fecha" type="timestamp">
+            <column name="Fecha" length="19" />
+        </property>
+        <property name="cantidad" type="java.lang.Float">
+            <column name="Cantidad" precision="12" scale="0" />
+        </property>
+        <property name="idusuarios" type="java.lang.Integer">
+            <column name="IDUsuarios" />
+        </property>
+    </class>
+</hibernate-mapping>

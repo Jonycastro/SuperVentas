@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26-jun-2019 18:02:00 by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="Modelo.Usuarios" table="usuarios" catalog="SuperVentas" optimistic-lock="version">
+        <id name="idusuarios" type="java.lang.Integer">
+            <column name="IDUsuarios" />
+            <generator class="identity" />
+        </id>
+        <property name="contrase&#241;a" type="string">
+            <column name="Contrase&#241;a" length="45" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="45" />
+        </property>
+        <property name="dni" type="string">
+            <column name="DNI" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
